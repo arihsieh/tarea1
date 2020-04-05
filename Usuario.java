@@ -60,4 +60,10 @@ public class Usuario {
        this.setCantHijos(unaCantHijos);
        this.setSaldo(unSaldo);
     }
+    
+    @Override
+    public boolean equals(Object o){
+        Usuario u = (Usuario) o;
+        return (this.getCedula() == u.getCedula());
+    }
 }
