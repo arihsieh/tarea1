@@ -15,4 +15,9 @@ public class FuncionesUsuario {
         else pago = pago/2;
         return pago;
     }
+    
+    Usuario nuevoBalance (Usuario usu, int pago){
+        usu.setSaldo(usu.getSaldo() - pago);
+        return usu;
+    }
 }
